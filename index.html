@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1"/>
+<title>Jay Priyadarshi — Business Partnerships Manager</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#080810;--bg2:#0d0d1a;--blue:#3b82f6;--violet:#8b5cf6;--cyan:#06b6d4;--glow:#4f46e5;--green:#34d399;--t1:#f1f5f9;--t2:#94a3b8;--t3:#475569}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-thumb{background:var(--glow);border-radius:3px}
+::selection{background:rgba(79,70,229,.3);color:var(--t1)}
+.fd{font-family:'Syne',sans-serif}.fm{font-family:'JetBrains Mono',monospace}
+.mxa{margin:0 auto}.w100{width:100%}.rel{position:relative}.tac{text-align:center}
+.glass{background:rgba(15,15,31,.6);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.06)}
+.g2{background:rgba(255,255,255,.025);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.06)}
+.gt{background:linear-gradient(135deg,#3b82f6,#8b5cf6,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:300%;animation:gx 8s ease infinite}
+@keyframes gx{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.grid-bg{background-image:linear-gradient(rgba(59,130,246,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.025) 1px,transparent 1px);background-size:60px 60px}
+.tag{display:inline-flex;align-items:center;padding:4px 12px;border-radius:100px;font-size:11px;font-weight:500;background:rgba(59,130,246,.1);color:#60a5fa;border:1px solid rgba(59,130,246,.2);font-family:'JetBrains Mono',monospace;letter-spacing:.03em}
+.sec{padding:80px 20px;max-width:1200px;margin:0 auto}
+@media(min-width:768px){.sec{padding:110px 40px}}
+.fu{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
+.fu.v{opacity:1;transform:translateY(0)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-18px)}}
+@keyframes spn{to{transform:rotate(360deg)}}
+@keyframes spnr{to{transform:rotate(-360deg)}}
+@keyframes sb{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.3);opacity:.7}}
+
+/* SCROLL PROGRESS */
+.scrollbar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#3b82f6,#8b5cf6,#06b6d4);z-index:110;width:0%}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .4s;height:64px;display:flex;align-items:center}
+nav.sc{background:rgba(8,8,16,.88);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.05)}
+.ni{max-width:1200px;width:100%;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between}
+.nl{font-family:'Syne',sans-serif;font-weight:700;font-size:15px;background:none;border:none;color:inherit;cursor:pointer}
+.nl .j{background:linear-gradient(135deg,#3b82f6,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nl .n{color:var(--t2);margin-left:4px}
+.nls{display:flex;align-items:center;gap:2px}
+.nb{position:relative;background:none;border:none;color:var(--t2);font-family:'DM Sans',sans-serif;font-size:13px;padding:7px 11px;border-radius:10px;cursor:pointer;transition:all .2s;white-space:nowrap}
+.nb:hover{color:var(--t1);background:rgba(255,255,255,.05)}
+.nb::after{content:'';position:absolute;left:11px;right:11px;bottom:1px;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--blue),var(--violet));transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.nb:hover::after{transform:scaleX(1)}
+.ncta{background:var(--glow);color:#fff;border:none;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:9px 20px;border-radius:100px;cursor:pointer;margin-left:8px;transition:all .2s;box-shadow:0 4px 16px rgba(79,70,229,.3)}
+.ncta:hover{background:var(--blue);transform:translateY(-1px)}
+.hbg{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;border-radius:8px}
+.hbg span{display:block;width:20px;height:2px;background:var(--t1);border-radius:2px;transition:all .25s}
+.mm{display:none;position:fixed;top:64px;left:0;right:0;z-index:99;padding:14px 20px 20px;background:rgba(8,8,16,.96);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.05)}
+.ml{display:block;width:100%;background:none;border:none;text-align:left;color:var(--t2);font-family:'DM Sans',sans-serif;font-size:15px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.05);cursor:pointer;transition:color .2s}
+.ml:hover{color:var(--t1)}.ml:last-of-type{border-bottom:none}
+.mct{width:100%;margin-top:14px;background:var(--glow);color:#fff;border:none;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;padding:13px;border-radius:100px;cursor:pointer}
+@media(max-width:767px){.hbg{display:flex}.nls{display:none}}
+
+/* HERO */
+#hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.stars{position:absolute;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.star{position:absolute;border-radius:50%;background:#e0f2fe;animation-name:tw;animation-timing-function:ease-in-out;animation-iteration-count:infinite}
+@keyframes tw{0%,100%{opacity:.15;transform:scale(1)}50%{opacity:.95;transform:scale(1.4)}}
+.hg1{position:absolute;top:25%;left:50%;transform:translate(-50%,-50%);width:480px;height:480px;border-radius:50%;background:rgba(79,70,229,.09);filter:blur(100px);pointer-events:none}
+.hg2{position:absolute;bottom:20%;right:20%;width:230px;height:230px;border-radius:50%;background:rgba(139,92,246,.07);filter:blur(70px);pointer-events:none}
+.hi{max-width:1200px;margin:0 auto;padding:100px 20px 60px;width:100%;display:grid;grid-template-columns:1fr;gap:40px;align-items:center;min-height:100vh;position:relative;z-index:1}
+@media(min-width:900px){.hi{grid-template-columns:1fr 1fr;gap:60px}}
+#hc{width:100%;display:flex;align-items:center;justify-content:center;order:-1}
+@media(min-width:900px){#hc{order:0}}
+.cw{width:100%;height:clamp(240px,38vw,480px);position:relative}
+.hbr{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.bg{background:rgba(52,211,153,.08);color:#34d399;border:1px solid rgba(52,211,153,.25)}
+.hh{font-family:'Syne',sans-serif;font-weight:800;line-height:1.1;color:var(--t1);margin-bottom:18px;font-size:clamp(28px,4vw,50px)}
+.hhl{display:block;margin-top:4px}
+.hs{color:var(--t2);font-size:clamp(14px,1.4vw,16px);line-height:1.65;margin-bottom:28px;max-width:460px}
+.bp{background:var(--glow);color:#fff;border:none;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;padding:13px 24px;border-radius:100px;cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(79,70,229,.3);text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.bp:hover{background:var(--blue);transform:translateY(-2px)}
+.si{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;z-index:1}
+.st{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--t3);letter-spacing:.15em}
+.sl{width:2px;height:32px;background:linear-gradient(to bottom,var(--blue),transparent);border-radius:2px;animation:sb 1.5s ease-in-out infinite}
+
+/* FIGURE (replaces moon) */
+.oc{position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center;transition:transform .35s ease}
+.r1{position:absolute;width:clamp(200px,35vw,370px);height:clamp(200px,35vw,370px);border-radius:50%;border:1.5px solid rgba(6,182,212,.3);transform:rotateX(70deg);animation:spn 18s linear infinite}
+.r2{position:absolute;width:clamp(250px,43vw,450px);height:clamp(250px,43vw,450px);border-radius:50%;border:1px solid rgba(139,92,246,.2);transform:rotateX(50deg) rotateZ(30deg);animation:spnr 25s linear infinite}
+.odot{position:absolute;top:-4px;left:50%;transform:translateX(-50%);width:7px;height:7px;border-radius:50%;background:#67e8f9;box-shadow:0 0 8px #67e8f9,0 0 18px #67e8f9}
+.pt{position:absolute;border-radius:50%;background:rgba(139,92,246,.7)}
+.fig-wrap{position:relative;z-index:2;animation:float 5s ease-in-out infinite}
+.fig-wrap svg{width:100%;height:100%;display:block;overflow:visible}
+.fig-hero{width:clamp(120px,20vw,190px);height:clamp(190px,32vw,300px);filter:drop-shadow(0 0 40px rgba(99,102,241,.5)) drop-shadow(0 0 80px rgba(139,92,246,.25))}
+.fig-hero .fig-body{animation:breathe 5s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}
+.fig-torso{transform-box:fill-box;transform-origin:50% 50%}
+.fig-arm-l,.fig-arm-r,.fig-leg-l,.fig-leg-r{transform-box:fill-box;transform-origin:50% 0%}
+.fig-arm-l{transform:rotate(6deg)}
+.fig-arm-r{transform:rotate(-6deg)}
+.fig-hero .fig-arm-l{animation:swayL 4s ease-in-out infinite}
+.fig-hero .fig-arm-r{animation:swayR 4s ease-in-out infinite}
+@keyframes swayL{0%,100%{transform:rotate(6deg)}50%{transform:rotate(11deg)}}
+@keyframes swayR{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(-11deg)}}
+@keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.015)}}
+@keyframes walkL{0%,100%{transform:rotate(-12deg)}50%{transform:rotate(12deg)}}
+@keyframes walkR{0%,100%{transform:rotate(12deg)}50%{transform:rotate(-12deg)}}
+@keyframes raiseArm{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(-72deg)}}
+@keyframes waveArm{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(-46deg)}}
+.fig-mini{position:absolute;top:16px;right:20px;width:52px;height:82px;opacity:.85;filter:drop-shadow(0 0 16px rgba(99,102,241,.4));z-index:2;pointer-events:none}
+@media(max-width:900px){.fig-mini{display:none}}
+.fig-exp .fig-leg-l{animation:walkL 1.3s ease-in-out infinite}
+.fig-exp .fig-leg-r{animation:walkR 1.3s ease-in-out infinite}
+.fig-skill .fig-arm-r{animation:raiseArm 2.2s ease-in-out infinite}
+.fig-contact .fig-arm-r{animation:waveArm 1s ease-in-out infinite}
+
+/* SHARED */
+.slab{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.ll{width:32px;height:2px;border-radius:2px;flex-shrink:0}
+.sh2{font-family:'Syne',sans-serif;font-weight:700;line-height:1.15;margin-bottom:20px;font-size:clamp(24px,3.2vw,42px)}
+.bt{color:var(--t2);font-size:clamp(14px,1.3vw,16px);line-height:1.7}
+.bt p+p{margin-top:14px}
+.tr{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+
+/* ABOUT */
+.ag{display:grid;grid-template-columns:1fr;gap:48px;align-items:start}
+@media(min-width:900px){.ag{grid-template-columns:1fr 1fr;gap:80px}}
+.pg{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:480px){.pg{grid-template-columns:1fr}}
+.pc{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:20px;transition:all .3s;cursor:default}
+.pc:hover{transform:translateY(-4px);border-color:rgba(59,130,246,.3);background:rgba(59,130,246,.04)}
+.pi{font-size:22px;margin-bottom:10px}
+.pt2{font-family:'Syne',sans-serif;font-weight:600;font-size:14px;color:var(--t1);margin-bottom:7px}
+.pd{font-size:13px;color:var(--t3);line-height:1.6}
+
+/* EXPERIENCE */
+.tl{position:relative}
+.tll{display:none;position:absolute;left:180px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,rgba(255,255,255,.08),transparent)}
+@media(min-width:800px){.tll{display:block}}
+.ti{display:grid;grid-template-columns:1fr;margin-bottom:22px}
+@media(min-width:800px){.ti{grid-template-columns:180px 1fr;gap:32px}}
+.tm{display:none;flex-direction:column;align-items:flex-end;gap:6px;padding-top:20px}
+@media(min-width:800px){.tm{display:flex}}
+.td{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--t3);text-align:right;line-height:1.5}
+.tdot{display:none;position:absolute;left:175px;top:22px;width:12px;height:12px;border-radius:50%;border:2px solid var(--bg2)}
+@media(min-width:800px){.tdot{display:block}}
+.ec{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:20px 22px;transition:all .3s}
+.ec:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.1)}
+.emm{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:10px}
+@media(min-width:800px){.emm{display:none}}
+.er{font-family:'Syne',sans-serif;font-weight:600;font-size:clamp(14px,1.5vw,17px);color:var(--t1);margin-bottom:3px}
+.eco{font-family:'JetBrains Mono',monospace;font-size:12px;margin-bottom:12px}
+.etgs{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+.etg{font-size:11px;padding:4px 10px;border-radius:100px;font-family:'JetBrains Mono',monospace}
+.eps{list-style:none;display:flex;flex-direction:column;gap:7px}
+.ep{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--t3);line-height:1.55}
+.edot{width:5px;height:5px;border-radius:50%;flex-shrink:0;margin-top:6px}
+
+/* SKILLS */
+.tkr{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+.tkc{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:10px 15px;display:flex;align-items:center;gap:9px;cursor:default;transition:all .25s}
+.tkc:hover{transform:translateY(-3px);border-color:rgba(59,130,246,.3);background:rgba(59,130,246,.04)}
+.tki{font-size:16px}.tkn{font-size:13px;color:var(--t2)}
+.skg{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:640px){.skg{grid-template-columns:1fr 1fr}}
+.skc{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:22px 24px}
+.skch{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.skcd{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.skcn{font-family:'Syne',sans-serif;font-weight:600;font-size:13px;color:var(--t1);letter-spacing:.04em}
+.ski{margin-bottom:14px}.ski:last-child{margin-bottom:0}
+.skr{display:flex;justify-content:space-between;margin-bottom:5px}
+.skn{font-size:13px;color:var(--t2)}.skp{font-size:11px;font-family:'JetBrains Mono',monospace}
+.skt{height:4px;background:rgba(255,255,255,.06);border-radius:4px;overflow:hidden}
+.skf{height:100%;border-radius:4px;width:0;transition:width 1s ease}
+
+/* WRITING */
+.fa{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:28px;margin-bottom:0;transition:all .3s;cursor:pointer;position:relative;overflow:hidden}
+.fa:hover{transform:translateY(-4px);border-color:rgba(59,130,246,.25)}
+.fag{position:absolute;top:0;right:0;width:200px;height:200px;border-radius:50%;pointer-events:none;filter:blur(70px);opacity:.06;background:var(--blue)}
+.fabr{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.faba{font-size:11px;padding:4px 10px;border-radius:100px;font-family:'JetBrains Mono',monospace;color:var(--blue);background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.3)}
+.far{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--t3)}
+.fat{font-family:'Syne',sans-serif;font-weight:700;color:var(--t1);line-height:1.25;margin-bottom:12px;font-size:clamp(17px,2vw,24px)}
+.fae{color:var(--t2);font-size:clamp(13px,1.3vw,15px);line-height:1.7;margin-bottom:16px;max-width:680px}
+.fac{display:inline-flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--blue);transition:gap .2s}
+.fac:hover{gap:10px}
+
+/* RESEARCH */
+.rc{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:24px 28px;cursor:pointer;transition:all .3s;position:relative;overflow:hidden}
+.rc:hover{transform:translateY(-4px);border-color:rgba(139,92,246,.3)}
+.rcl{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--violet);background:rgba(139,92,246,.12);border:1px solid rgba(139,92,246,.25);padding:3px 10px;border-radius:100px;display:inline-block;margin-bottom:14px}
+.rct{font-family:'Syne',sans-serif;font-weight:700;font-size:clamp(15px,1.8vw,20px);color:var(--t1);line-height:1.3;margin-bottom:10px}
+.rca{font-size:13px;color:var(--t3);line-height:1.65;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:16px}
+.rckw{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px}
+.kw{font-size:11px;padding:3px 10px;border-radius:100px;font-family:'JetBrains Mono',monospace;color:var(--cyan);background:rgba(6,182,212,.1);border:1px solid rgba(6,182,212,.2)}
+.rrb{display:inline-flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--violet);transition:gap .2s}
+.rrb:hover{gap:10px}
+
+/* CONTACT */
+.ch2{font-family:'Syne',sans-serif;font-weight:700;line-height:1.15;text-align:center;margin-bottom:16px;font-size:clamp(26px,4vw,50px)}
+.cbt{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-bottom:44px}
+.cg{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:20px;max-width:760px;margin-left:auto;margin-right:auto}
+@media(min-width:600px){.cg{grid-template-columns:repeat(3,1fr)}}
+.cca{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px 20px;display:flex;align-items:center;gap:14px;text-decoration:none;transition:all .3s}
+.cca:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.12)}
+.cci{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform .25s}
+.cca:hover .cci{transform:scale(1.1)}
+.ccl{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--t3);margin-bottom:3px}
+.ccv{font-size:13px;color:var(--t1);font-weight:500;word-break:break-word}
+
+/* FOOTER */
+footer{border-top:1px solid rgba(255,255,255,.05);padding:26px 20px}
+.fi{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+.fc{font-size:13px;color:var(--t3)}
+
+/* MODALS */
+.mod{display:none;position:fixed;inset:0;z-index:200;background:rgba(4,4,10,.97);backdrop-filter:blur(20px);overflow-y:auto}
+.mod.open{display:block}
+.mh{position:sticky;top:0;z-index:10;background:rgba(8,8,16,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06);padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
+.mcl{background:none;border:1px solid rgba(255,255,255,.1);color:var(--t2);font-family:'JetBrains Mono',monospace;font-size:12px;padding:7px 15px;border-radius:100px;cursor:pointer;display:flex;align-items:center;gap:6px;transition:all .2s}
+.mcl:hover{border-color:var(--blue);color:var(--blue)}
+.mnb{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--t3);display:flex;align-items:center;gap:6px}
+.pw{max-width:820px;margin:0 auto;padding:40px 20px 80px}
+@media(min-width:640px){.pw{padding:56px 40px 100px}}
+.pcr{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--t3);display:flex;align-items:center;gap:8px;margin-bottom:26px;flex-wrap:wrap}
+.pcr a{color:var(--blue);text-decoration:none;cursor:pointer}
+.pcr span.s{color:var(--t3);opacity:.5}
+.pdt{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--t3);margin-bottom:20px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.pcat{font-size:11px;padding:3px 10px;border-radius:100px;font-family:'JetBrains Mono',monospace;color:var(--violet);background:rgba(139,92,246,.12);border:1px solid rgba(139,92,246,.25)}
+.ph1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(22px,3.5vw,38px);color:var(--t1);line-height:1.15;margin-bottom:8px}
+.pst{font-family:'Syne',sans-serif;font-weight:500;font-size:clamp(14px,1.7vw,18px);color:var(--t2);line-height:1.4;margin-bottom:26px}
+.pau{display:flex;align-items:center;gap:12px;padding:16px 20px;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06);border-radius:14px;margin-bottom:34px}
+.pauav{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#4f46e5,#8b5cf6);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:#fff;flex-shrink:0}
+.paun{font-family:'Syne',sans-serif;font-weight:600;font-size:15px;color:var(--t1);margin-bottom:2px}
+.paum{font-size:12px;color:var(--t3)}
+.pdiv{height:1px;background:rgba(255,255,255,.06);margin:30px 0}
+.pst2{font-family:'Syne',sans-serif;font-weight:700;font-size:clamp(16px,2vw,20px);color:var(--t1);margin-bottom:14px;margin-top:30px}
+.pst2:first-of-type{margin-top:0}
+.pp{color:var(--t2);font-size:clamp(13px,1.4vw,15px);line-height:1.8;margin-bottom:14px}
+.pp strong{color:var(--t1);font-weight:600}
+.abx{background:rgba(79,70,229,.06);border:1px solid rgba(79,70,229,.2);border-radius:14px;padding:22px 24px;margin-bottom:30px}
+.abl{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--glow);letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
+.abt{color:var(--t2);font-size:clamp(13px,1.3vw,14px);line-height:1.75}
+.kwb{margin-bottom:30px}.kwl{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--cyan);letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
+.kwls{display:flex;flex-wrap:wrap;gap:8px}
+.phl{background:rgba(59,130,246,.06);border-left:3px solid var(--blue);padding:16px 20px;border-radius:0 12px 12px 0;margin:20px 0;color:var(--t2);font-size:clamp(13px,1.3vw,15px);line-height:1.7;font-style:italic}
+.fng{display:grid;grid-template-columns:1fr;gap:14px;margin:20px 0}
+@media(min-width:600px){.fng{grid-template-columns:1fr 1fr}}
+.fnc{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:18px 20px}
+.fnn{font-family:'Syne',sans-serif;font-weight:700;font-size:28px;opacity:.2;margin-bottom:8px;line-height:1}
+.fnt{font-size:13px;color:var(--t2);line-height:1.65}
+.ptb{width:100%;border-collapse:collapse;margin:20px 0;font-size:13px}
+.ptb th{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--t3);text-align:left;padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.02)}
+.ptb td{color:var(--t2);padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.04)}
+.ptb tr:hover td{background:rgba(255,255,255,.02)}
+</style>
+</head>
+<body>
+
+<div class="scrollbar" id="scrollbar"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="ni">
+    <button class="nl" onclick="go('#hero')"><span class="j">Jay</span><span class="n">Priyadarshi</span></button>
+    <div class="nls">
+      <button class="nb" onclick="go('#about')">About</button>
+      <button class="nb" onclick="go('#experience')">Experience</button>
+      <button class="nb" onclick="go('#skills')">Skills</button>
+      <button class="nb" onclick="go('#writing')">Writing</button>
+      <button class="nb" onclick="go('#research')">Research</button>
+      <button class="ncta" onclick="go('#contact')">Let's Talk</button>
+    </div>
+    <button class="hbg" id="hbg" onclick="tmenu()" aria-label="Menu">
+      <span id="h1"></span><span id="h2"></span><span id="h3"></span>
+    </button>
+  </div>
+</nav>
+<div class="mm" id="mm">
+  <button class="ml" onclick="go('#about')">About</button>
+  <button class="ml" onclick="go('#experience')">Experience</button>
+  <button class="ml" onclick="go('#skills')">Skills</button>
+  <button class="ml" onclick="go('#writing')">Writing</button>
+  <button class="ml" onclick="go('#research')">Research</button>
+  <button class="mct" onclick="go('#contact')">Let's Talk</button>
+</div>
+
+<!-- HERO -->
+<section id="hero" class="grid-bg" style="position:relative">
+  <div class="stars" id="stars"></div>
+  <div class="hg1"></div><div class="hg2"></div>
+  <div class="hi">
+    <div>
+      <div class="hbr">
+        <span class="tag">Business Partnerships Manager</span>
+        <span class="tag bg">Open to Collaborate</span>
+      </div>
+      <h1 class="hh fd">
+        Driving Growth Through
+        <span class="hhl gt" id="rw">Strategy</span>
+        <span>&amp; Authentic Partnerships</span>
+      </h1>
+      <p class="hs">I bring together legal thinking, commercial instinct, and human-centred communication to build partnerships that genuinely last, across industries, geographies, and contexts.</p>
+    </div>
+    <div id="hc"><div class="cw"><div class="oc" id="oc"><div class="r2"></div><div class="r1"><span class="odot"></span></div><div class="fig-wrap fig-hero"></div></div></div></div>
+  </div>
+  <div class="si"><span class="st fm">SCROLL</span><div class="sl"></div></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" style="background:var(--bg);padding:80px 0">
+  <div class="sec" style="padding-top:0;padding-bottom:0">
+    <div class="slab fu"><div class="ll" style="background:var(--blue)"></div><span class="tag">About Me</span></div>
+    <div class="ag">
+      <div>
+        <h2 class="sh2 fd fu">Where Management Meets <span class="gt">Business Strategy</span> Meets Human Connection</h2>
+        <div class="bt fu">
+          <p>I didn't take the usual path into sales and partnerships. My journey started in courtrooms, three years as a practicing lawyer in Mehsana, where I learned something most salespeople never do: how to hold complexity with calm, read people under pressure, and structure agreements that actually hold.</p>
+          <p>That foundation, layered with a BCom, an MBA from Ganpat University, and hands-on exposure to ERP systems, digital transformation, and marketing, gives me a rare perspective. I see partnerships not as transactions, but as long-term architectures that must serve both sides to endure.</p>
+          <p>Today I work with startups, SMEs, and enterprises to match their ambitions with the right technology and people. I don't pitch. I listen, diagnose, and co-design the right path forward. For me, success isn't in the signed contract alone. It's in the trust that made it possible.</p>
+        </div>
+        <div class="tr fu">
+          <span class="tag">ERP &amp; Digital</span><span class="tag">B2B Sales</span><span class="tag">Content Strategy</span><span class="tag">Legal Advisory</span><span class="tag">MBA Research</span><span class="tag">Ahmedabad, India</span>
+        </div>
+      </div>
+      <div class="pg fu" id="pg"></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" style="background:var(--bg2);padding:80px 0;position:relative">
+  <div class="fig-wrap fig-mini fig-exp"></div>
+  <div class="sec" style="padding-top:0;padding-bottom:0">
+    <div class="slab fu"><div class="ll" style="background:var(--violet)"></div><span class="tag" style="color:#c4b5fd;border-color:rgba(196,181,253,.25);background:rgba(139,92,246,.1)">Journey</span></div>
+    <h2 class="sh2 fd fu">A Non-Linear Path to <span class="gt">Strategic Growth</span></h2>
+    <div class="tl rel" id="tl"><div class="tll"></div></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="background:var(--bg);padding:80px 0;position:relative">
+  <div class="fig-wrap fig-mini fig-skill"></div>
+  <div class="sec" style="padding-top:0;padding-bottom:0">
+    <div class="slab fu"><div class="ll" style="background:var(--cyan)"></div><span class="tag" style="color:#67e8f9;border-color:rgba(103,232,249,.25);background:rgba(6,182,212,.1)">Capabilities</span></div>
+    <h2 class="sh2 fd fu">Skills Built Across <span class="gt">Disciplines</span></h2>
+    <div class="tkr fu" id="tkr"></div>
+    <div class="skg" id="skg"></div>
+  </div>
+</section>
+
+<!-- WRITING -->
+<section id="writing" style="background:var(--bg2);padding:80px 0">
+  <div class="sec" style="padding-top:0;padding-bottom:0">
+    <div class="slab fu"><div class="ll" style="background:var(--blue)"></div><span class="tag">Writing</span></div>
+    <h2 class="sh2 fd fu">Ideas Worth <span class="gt">Sharing</span></h2>
+    <p class="bt fu" style="margin-bottom:28px;max-width:500px">Perspectives shaped by three careers: law, business development, and content. Written to think, not to perform.</p>
+    <div class="fa fu" onclick="oart()">
+      <div class="fag"></div>
+      <div class="fabr"><span class="faba">Featured Essay</span><span class="far fm">6 min read</span></div>
+      <div class="fat fd">Why the Best Partnership Deals Start With Listening, Not Pitching</div>
+      <div class="fae">The instinct to present, demo, and sell on first contact is widespread, and consistently counterproductive in complex B2B environments. Here's what I've learned from deals that actually closed, and the one shift in posture that changes everything about how clients receive you.</div>
+      <div class="fac">
+        <span class="fm">Read the full essay</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research" style="background:var(--bg);padding:80px 0">
+  <div class="sec" style="padding-top:0;padding-bottom:0">
+    <div class="slab fu"><div class="ll" style="background:var(--violet)"></div><span class="tag" style="color:#c4b5fd;border-color:rgba(196,181,253,.25);background:rgba(139,92,246,.1)">Research Writing</span></div>
+    <h2 class="sh2 fd fu">Academic Work &amp; <span class="gt">Original Research</span></h2>
+    <p class="bt fu" style="margin-bottom:28px;max-width:520px">During my MBA at Ganpat University, I developed a research mindset that went beyond coursework. These are inquiries I pursued because the questions wouldn't let me go.</p>
+    <div class="rc fu" onclick="ores()">
+      <div style="position:absolute;top:0;right:0;width:180px;height:180px;border-radius:50%;background:rgba(139,92,246,.04);filter:blur(60px);pointer-events:none"></div>
+      <div class="rcl fm">Research Paper · Sep 2025</div>
+      <div class="rct fd">The Paradox of Influence: Exploring the Impact of Over-Endorsement and Authenticity on Consumer Engagement Intent in Social Media Marketing</div>
+      <div class="rca">This study investigates the complex relationship between over-endorsement, authenticity, and consumer engagement in the context of influencer marketing on social media. Using a mixed-methods approach with data from 443 respondents, the study reveals that over-endorsement negatively impacts perceived relatability, emotional connection, and trust. Authenticity is identified as a moderating factor that can sustain consumer engagement even in the presence of over-endorsement. Cultural alignment plays a significant role, particularly in markets like Gujarat, India.</div>
+      <div class="rckw">
+        <span class="kw">Over-Endorsement</span><span class="kw">Authenticity</span><span class="kw">Consumer Engagement</span><span class="kw">Influencer Marketing</span><span class="kw">Cultural Alignment</span><span class="kw">Trust</span>
+      </div>
+      <div class="rrb fm"><span>Read the full paper</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background:var(--bg);padding:80px 0;position:relative">
+  <div class="fig-wrap fig-mini fig-contact"></div>
+  <div class="sec" style="padding-top:0;padding-bottom:0">
+    <div class="slab fu" style="justify-content:center"><div class="ll" style="background:var(--blue)"></div><span class="tag">Get In Touch</span><div class="ll" style="background:var(--blue)"></div></div>
+    <h2 class="ch2 fd fu">Let's Build Something <span class="gt">Meaningful</span><br>Together</h2>
+    <p class="bt tac fu" style="max-width:480px;margin:0 auto 32px">Whether you're exploring a partnership, need a strategic sounding board, or simply want to connect, I'm open to the conversation.</p>
+    <div class="cbt fu">
+      <a href="mailto:jaypriyadarshi8@gmai.com" class="bp">
+        <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+        Send a Message
+      </a>
+    </div>
+    <div class="cg fu" id="cg"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fi" style="justify-content:center">
+    <span class="fc">© 2025 Jay Priyadarshi. Built with curiosity.</span>
+  </div>
+</footer>
+
+<!-- RESEARCH MODAL -->
+<div id="rm" class="mod">
+  <div class="mh">
+    <div class="mnb"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M10 4l-4 4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>jay-priyadarshi.com / research</span></div>
+    <button class="mcl" onclick="cm('rm')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Close</button>
+  </div>
+  <div class="pw">
+    <div class="pcr fm"><a onclick="cm('rm')">Home</a><span class="s">/</span><a onclick="cm('rm');setTimeout(()=>go('#research'),200)">Research</a><span class="s">/</span><span style="color:var(--t2)">The Paradox of Influence</span></div>
+    <div class="pdt fm"><span class="pcat">Research Paper</span><span>15 September 2025</span><span>· Ganpat University</span></div>
+    <h1 class="ph1 fd">THE PARADOX OF INFLUENCE</h1>
+    <div class="pst fd">Exploring the Impact of Over-Endorsement and Authenticity on Consumer Engagement Intent in Social Media Marketing</div>
+    <div class="pau"><div class="pauav">JP</div><div><div class="paun fd">Jay Priyadarshi</div><div class="paum">MBA in Marketing · Ganpat University, Gujarat · jaypriyadarshi23@gnu.ac.in</div></div></div>
+    <div class="abx"><div class="abl fm">Abstract</div><div class="abt">This study investigates the complex relationship between over-endorsement, authenticity, and consumer engagement in the context of influencer marketing on social media. Using a mixed-methods approach, data from <strong style="color:var(--t1)">443 respondents</strong> reveal that over-endorsement, when influencers promote too many products, negatively impacts key factors such as perceived relatability, emotional connection, and trust, ultimately reducing consumer engagement. However, the study also identifies <strong style="color:var(--t1)">authenticity as a moderating factor</strong> that can help sustain consumer engagement, even in the presence of over-endorsement. Furthermore, <strong style="color:var(--t1)">cultural alignment</strong> plays a significant role in shaping consumer perceptions and engagement, especially in culturally diverse markets like Gujarat, India. The findings provide actionable insights for brands and influencers, highlighting the importance of maintaining a careful balance between endorsement frequency and authenticity to build trust, preserve emotional connections, and foster long-term consumer engagement.</div></div>
+    <div class="kwb"><div class="kwl fm">Keywords</div><div class="kwls"><span class="kw">Over-Endorsement</span><span class="kw">Perceived Relatability</span><span class="kw">Authenticity</span><span class="kw">Emotional Connection</span><span class="kw">Trust</span><span class="kw">Cultural Alignment</span><span class="kw">Engagement Intent</span></div></div>
+    <div class="pdiv"></div>
+    <div class="pst2 fd">1. Introduction</div>
+    <p class="pp">The rise of social media has fundamentally reshaped how brands communicate with consumers. Influencer marketing, once a niche tactic, has become a primary channel for brand discovery, credibility-building, and direct conversion. Platforms like Instagram, YouTube, and emerging short-form video apps have given individual creators unprecedented access to audiences that were once only reachable through mass media.</p>
+    <p class="pp">Yet something curious is happening in this landscape. As influencer marketing has scaled, so has the frequency with which individual influencers endorse multiple, sometimes unrelated, products within compressed timeframes. Consumers, particularly younger, digitally-native audiences, have become increasingly sensitive to the difference between an influencer who genuinely uses a product and one who is simply being paid to mention it.</p>
+    <p class="pp">This study terms that condition <strong>over-endorsement</strong>, and explores its consequences on consumer engagement intent. The central question is not whether influencer marketing works (the commercial evidence suggests it does, at scale), but whether there is a threshold beyond which the volume and frequency of endorsements begins to corrode the very trust that made the channel effective in the first place.</p>
+    <div class="phl">If a creator endorses five products in a single week, does that reduce how much a consumer trusts their recommendation of any one of them? And if so, what is the role of authenticity in moderating that erosion?</div>
+    <div class="pst2 fd">2. Research Objectives</div>
+    <p class="pp">This study pursues four primary objectives. First, to examine the direct relationship between over-endorsement and consumer engagement intent on social media platforms. Second, to investigate how perceived authenticity moderates the impact of over-endorsement on consumer trust and engagement. Third, to understand the role of emotional connection and perceived relatability as mediating variables. Fourth, to explore how cultural context, specifically the values and social norms of consumers in Gujarat, India, shapes these dynamics in ways that may differ from Western-centric research.</p>
+    <div class="pst2 fd">3. Literature Review</div>
+    <p class="pp">Influencer marketing is rooted in a simple mechanic: parasocial relationships. Consumers develop a sense of familiarity and trust with creators they follow regularly, even without direct interaction. This relationship, when genuine, creates a form of peer recommendation that traditional advertising cannot replicate. However, parasocial trust is not unconditional. Research in consumer psychology suggests that perceived authenticity, the extent to which a consumer believes an influencer is expressing genuine beliefs rather than performing for commercial incentive, is the primary variable determining whether an endorsement is effective or counterproductive.</p>
+    <p class="pp">Prior literature on advertising fatigue, source credibility theory, and persuasion knowledge provides a theoretical foundation for understanding over-endorsement. When consumers become aware that a recommendation is motivated by commercial incentive rather than genuine belief, they activate what is called persuasion knowledge: a cognitive defence mechanism that critically evaluates and often discounts the message. The more frequently this mechanism is triggered, the more systematically a consumer distances themselves from the influencer's recommendations.</p>
+    <p class="pp">What existing literature has not adequately addressed is the intersecting role of cultural alignment in markets where collectivist values, family influence, and community trust play a larger role in purchase decisions than individual endorsement. Indian consumers, particularly those in culturally cohesive states like Gujarat, may respond differently to perceived inauthenticity than Western counterparts who place higher value on individual expression.</p>
+    <div class="pst2 fd">4. Methodology</div>
+    <p class="pp">The study employed a <strong>mixed-methods approach</strong>, combining a structured online survey with follow-up qualitative interviews. The quantitative component captured responses from <strong>443 participants</strong> across age groups 18–45, all active social media users who followed at least two influencers. The survey instrument measured perceptions of over-endorsement, authenticity, trust, emotional connection, and behavioural engagement intent using validated Likert-scale items adapted from established consumer behaviour instruments.</p>
+    <p class="pp">Qualitative interviews (n=22) were conducted to surface nuances that quantitative data alone could not capture, particularly around cultural identity, the role of aspiration versus relatability, and how consumers negotiate their own scepticism about influencer content.</p>
+    <div class="pst2 fd">5. Key Findings</div>
+    <div class="fng">
+      <div class="fnc"><div class="fnn fd" style="color:var(--blue)">01</div><div class="fnt"><strong style="color:var(--t1)">Over-endorsement directly reduces trust.</strong> Consumers exposed to influencers who endorsed 5+ products weekly reported significantly lower trust scores than those following influencers with 1–2 weekly endorsements.</div></div>
+      <div class="fnc"><div class="fnn fd" style="color:var(--violet)">02</div><div class="fnt"><strong style="color:var(--t1)">Authenticity is the critical moderator.</strong> Even among high-frequency endorsers, influencers perceived as authentic maintained substantially higher engagement intent scores, reducing the negative effect of over-endorsement by approximately 38%.</div></div>
+      <div class="fnc"><div class="fnn fd" style="color:var(--cyan)">03</div><div class="fnt"><strong style="color:var(--t1)">Emotional connection mediates engagement.</strong> Perceived relatability and emotional connection to an influencer significantly mediated the relationship between endorsement frequency and purchase intent.</div></div>
+      <div class="fnc"><div class="fnn fd" style="color:var(--green)">04</div><div class="fnt"><strong style="color:var(--t1)">Cultural alignment amplifies the effect.</strong> In the Gujarat sample, influencers who reflected local values, language, and aspirational contexts saw higher trust resilience despite over-endorsement.</div></div>
+    </div>
+    <div class="pst2 fd">6. Discussion</div>
+    <p class="pp">The findings point to what might be called the paradox of influence at scale: the very growth of an influencer's commercial activity tends to erode the authenticity that made them influential in the first place. Brands that seek influencers primarily for reach metrics without considering endorsement frequency may be investing in declining returns.</p>
+    <div class="phl">The best influencers are not the ones who say yes to the most brands. They are the ones whose audience never questions why they said yes.</div>
+    <p class="pp">The cultural dimension adds important nuance. In Gujarat, consumers responded positively to influencers who embedded product endorsements within lifestyle narratives consistent with local values: family, community, achievement through integrity. Generic lifestyle content that reflected aspirational Western aesthetics without cultural grounding saw faster trust erosion among this demographic.</p>
+    <div class="pst2 fd">7. Implications for Brands &amp; Creators</div>
+    <table class="ptb">
+      <thead><tr><th>Stakeholder</th><th>Implication</th></tr></thead>
+      <tbody>
+        <tr><td style="color:var(--blue)">Brands</td><td>Prioritise authenticity fit over reach metrics. Fewer, well-aligned partnerships outperform high-frequency endorsement campaigns.</td></tr>
+        <tr><td style="color:var(--violet)">Influencers</td><td>Guard your credibility actively. Selective endorsement is not just ethical: it compounds in commercial value over time.</td></tr>
+        <tr><td style="color:var(--cyan)">Marketers</td><td>Build cultural alignment into influencer selection criteria. Regional market resonance is not a soft metric: it directly affects conversion probability.</td></tr>
+        <tr><td style="color:var(--green)">Platforms</td><td>Transparency features may paradoxically support trust if paired with authentic narrative context from the creator.</td></tr>
+      </tbody>
+    </table>
+    <div class="pst2 fd">8. Conclusion</div>
+    <p class="pp">This study confirms that over-endorsement is a measurable and significant threat to influencer marketing effectiveness, mediated through trust, emotional connection, and perceived relatability. Authenticity is the most powerful buffer against this erosion, and cultural alignment amplifies the protective effect of authenticity in regionally cohesive markets.</p>
+    <p class="pp">The paradox of influence is not that attention is scarce. It is that trust is. In an environment of abundant content and limited credibility, the influencers and brands that will endure are those who treat trust not as a byproduct of popularity, but as the primary asset to be protected, carefully and consistently, over time.</p>
+    <div class="pdiv"></div>
+    <p class="pp" style="font-size:12px;color:var(--t3)">Jay Priyadarshi · MBA in Marketing, Ganpat University, Gujarat, India · jaypriyadarshi23@gnu.ac.in · Published: September 2025</p>
+  </div>
+</div>
+
+<!-- ARTICLE MODAL -->
+<div id="am" class="mod">
+  <div class="mh">
+    <div class="mnb"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M10 4l-4 4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>jay-priyadarshi.com / writing</span></div>
+    <button class="mcl" onclick="cm('am')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Close</button>
+  </div>
+  <div class="pw">
+    <div class="pcr fm"><a onclick="cm('am')">Home</a><span class="s">/</span><a onclick="cm('am');setTimeout(()=>go('#writing'),200)">Writing</a><span class="s">/</span><span style="color:var(--t2)">Listening, Not Pitching</span></div>
+    <div class="pdt fm"><span class="pcat">Essay</span><span>· 6 min read</span></div>
+    <h1 class="ph1 fd">Why the Best Partnership Deals Start With Listening, Not Pitching</h1>
+    <div class="pau" style="margin-top:20px"><div class="pauav">JP</div><div><div class="paun fd">Jay Priyadarshi</div><div class="paum">Business Partnerships Manager · Writer</div></div></div>
+    <div class="pdiv"></div>
+    <p class="pp">There is a version of sales that most of us were trained on, even if no one called it training. It goes something like this: you prepare your deck, you refine your pitch, you book the meeting, and then you spend forty-five minutes explaining why what you offer is exactly what the other person needs. You bring energy. You handle objections. You close.</p>
+    <p class="pp">I spent enough time in courtrooms to know that this approach has a name in advocacy circles too: it is called arguing before you have understood the case. In law, that is malpractice. In partnerships, it is just very common.</p>
+    <div class="pst2 fd">The Pitch Is a Defence Mechanism</div>
+    <p class="pp">I do not think people pitch because they are arrogant. I think they pitch because they are nervous. A prepared pitch is a controlled environment. You know the material. You have rehearsed the transition from problem to solution. You feel capable, even confident.</p>
+    <p class="pp">But here is what a pitch does to the person sitting across from you: it signals that you have already decided what they need. And the moment a person feels that, they stop being a participant in a conversation and start being a target of a presentation. They may listen politely. They will rarely commit deeply.</p>
+    <div class="phl">The most dangerous moment in a partnership conversation is when you are talking instead of learning.</div>
+    <p class="pp">I had a meeting early in my partnerships work where I had prepared extensively. I knew the prospect's industry, their likely pain points, the relevant case studies. I was ready. And in the first ten minutes of that call, they told me something that invalidated half of my preparation: their real problem was something I had not considered at all. Because I had actually listened to those first ten minutes instead of using them to mentally cue my next slide, the meeting changed. We ended up talking for two hours. The deal closed three weeks later.</p>
+    <div class="pst2 fd">What Real Listening Does to a Deal</div>
+    <p class="pp">When you genuinely listen (not strategic active listening, not mirroring techniques, but actual curiosity about what the other person is trying to solve), several things happen that no pitch can manufacture.</p>
+    <p class="pp"><strong>First, you get real information.</strong> Most salespeople have access to the same public information about a company. But the person sitting across from you has the private information: the internal pressure they are under, the previous vendor who disappointed them, the stakeholder whose approval they need to navigate. That information only comes out if they trust you enough to share it. And they will not trust you if you are waiting for them to finish speaking so you can make your point.</p>
+    <p class="pp"><strong>Second, you build a different kind of rapport.</strong> There is a version of rapport that is manufactured: the mirrored body language, the remembered detail about their hometown, the calculated pause before responding. It works, sometimes. But it does not compound. Genuine curiosity compounds. People can feel the difference, and they remember it when they decide who they want to work with long-term.</p>
+    <p class="pp"><strong>Third, you earn the right to propose.</strong> A proposal that follows genuine understanding feels collaborative rather than transactional. You are not selling them something. You are offering a solution you have constructed together, from the inside out.</p>
+    <div class="pst2 fd">The One Shift That Changes Everything</div>
+    <p class="pp">The practical change is this: go into every partnership conversation with the explicit goal of leaving knowing something you did not know when you arrived. Not a prospect to be converted. A person with a context you do not yet fully understand. Your job in the first meeting is not to close. It is to understand clearly enough that whatever you eventually propose actually fits.</p>
+    <p class="pp">This requires tolerating silence instead of filling it. Asking a follow-up question when the instinct is to transition to your proof point. Being willing to say, at the end of a first meeting, "I don't think I know enough yet to propose the right thing. Can we talk again next week?"</p>
+    <div class="phl">That sentence has opened more doors for me than any pitch I have ever delivered.</div>
+    <p class="pp">The deals I am most proud of are not the ones I closed fastest. They are the ones where the person on the other side later told me that the process of working with me to reach a decision was itself a signal of what working with me would be like. The partnership had already begun before anything was signed.</p>
+    <div class="pst2 fd">A Final Thought</div>
+    <p class="pp">My background in law taught me that the best advocates are not those who speak most eloquently. They are those who understand the facts most completely. Understanding takes precedence over persuasion, always. The argument is only as strong as the foundation beneath it.</p>
+    <p class="pp">Partnerships are not much different. The proposal is only as compelling as the understanding that shaped it. And that understanding begins not when you start talking, but when you stop.</p>
+    <div class="pdiv"></div>
+    <p class="pp" style="font-size:12px;color:var(--t3)">Jay Priyadarshi · Business Partnerships Manager · Ahmedabad, India</p>
+  </div>
+</div>
+
+<script>
+const pillars=[
+  {icon:"🧭",title:"Legal Precision",desc:"Three years of active courtroom practice gave me something rare: the ability to structure complex agreements with clarity, read unstated risk, and hold my ground with integrity."},
+  {icon:"📐",title:"Commercial Acumen",desc:"BCom foundation and an MBA in marketing taught me to translate ambiguity into clear strategy. I don't just understand numbers. I understand what they mean for people."},
+  {icon:"🔗",title:"Partnership Design",desc:"I build collaborations that are meant to last, not just to close. Every engagement is approached as a system: aligned incentives, clear expectations, shared outcomes."},
+  {icon:"🪶",title:"Narrative Power",desc:"Words are my oldest tool. As a researcher and content writer, I shape ideas into language that moves people, whether that's a proposal, a paper, or a simple email."},
+];
+const exps=[
+  {role:"Business Partnerships Manager",company:"7Span",period:"Sep 2025 – Present",type:"Full-time",color:"#3b82f6",tags:["B2B Partnerships","Custom Software","Digital Transformation","SaaS"],pts:["Building long-term collaborations with startups, SMEs, and enterprises seeking dedicated tech teams","Managing full-cycle deal processes, from first conversation to signed partnership","Connecting client business goals with technology delivery across 500+ completed projects","Working closely with founders and decision-makers across India and global markets"]},
+  {role:"Business Advisor",company:"Odoo",period:"Jan 2025 – Aug 2025",type:"Advisory",color:"#8b5cf6",tags:["ERP Advisory","B2B Sales","Client Consulting","Technology Adoption"],pts:["Drove client consulting and advisory engagements around ERP-led transformations","Rebuilt client communication frameworks around business outcomes, not product features","Helped mid-market businesses navigate Odoo adoption from evaluation to active use","Contributed to marketing campaigns that improved lead quality and engagement rates"]},
+  {role:"Freelance Content Writer",company:"Independent",period:"Sep 2024 – Oct 2025",type:"Freelance",color:"#06b6d4",tags:["Research Writing","B2B Content","Email Copy","Blog Strategy"],pts:["Produced research-backed blogs and articles for SMB clients across categories","Developed email content sequences that improved open rates and conversion","Wrote in the founder's voice: never generic, always specific to the reader's context"]},
+  {role:"Research Scholar",company:"Ganpat University",period:"Aug 2024 – Jan 2025",type:"Academic",color:"#34d399",tags:["MBA Research","Academic Writing","Marketing Studies"],pts:["Conducted original research on influencer marketing, consumer psychology, and trust","Two research projects challenged existing frameworks with primary data from 400+ respondents","Continued research part-time after graduation, driven by intellectual curiosity, not credentials"]},
+  {role:"Lawyer",company:"District & Sessions Court, Mehsana",period:"Jul 2020 – Feb 2023",type:"Practice",color:"#f59e0b",tags:["Criminal Law","Legal Drafting","Courtroom Advocacy","Commercial Contracts"],pts:["Three years of active practice at District Court of Mehsana in criminal and civil matters","Developed foundational skills in legal research, document drafting, and strategic argumentation","Built the analytical discipline and composure under pressure that now defines my approach to deals","Navigated client representation with empathy, ethics, and a focus on long-term outcomes"]},
+];
+const traits=[{icon:"🧭",label:"Strategic Thinking"},{icon:"🤝",label:"Authentic Partnerships"},{icon:"🔬",label:"Research Mindset"},{icon:"🎯",label:"Commercial Clarity"},{icon:"🌐",label:"Global Perspective"},{icon:"🪶",label:"Narrative Craft"},{icon:"⚖️",label:"Legal Integrity"},{icon:"🔗",label:"Relationship Design"}];
+const sgs=[
+  {cat:"Partnerships & Business Dev",color:"#3b82f6",skills:[{n:"B2B Partnership Development",l:92},{n:"Client Relationship Management",l:93},{n:"Deal Structuring",l:92}]},
+  {cat:"Digital & ERP",color:"#8b5cf6",skills:[{n:"ERP Transformation (Odoo)",l:90},{n:"Digital Strategy",l:82},{n:"SaaS Product Advisory",l:90}]},
+  {cat:"Communication & Content",color:"#06b6d4",skills:[{n:"Research Writing",l:88},{n:"Strategic Content Writing",l:90},{n:"Business Communication",l:92}]},
+  {cat:"Legal & Commercial",color:"#34d399",skills:[{n:"Commercial Contract Law",l:88},{n:"Legal Drafting",l:85},{n:"Analytical Reasoning",l:88}]},
+];
+const cls=[
+  {lbl:"LinkedIn",val:"www.linkedin.com/in/jay-d-priyadarshi",href:"https://www.linkedin.com/in/jay-d-priyadarshi",color:"#0ea5e9",icon:`<svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>`},
+  {lbl:"Email",val:"jaypriyadarshi8@gmai.com",href:"mailto:jaypriyadarshi8@gmai.com",color:"#3b82f6",icon:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:20px;height:20px"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>`},
+  {lbl:"Phone",val:"+91 6351547956",href:"tel:+916351547956",color:"#8b5cf6",icon:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:20px;height:20px"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round"/></svg>`},
+];
+
+function go(s){const e=document.querySelector(s);if(e)e.scrollIntoView({behavior:'smooth'});document.getElementById('mm').style.display='none';mo=false;rh()}
+function ev(e,s){e.preventDefault();go(s)}
+
+// Reusable figure SVG (unique gradient id per instance)
+function figureSVG(id){
+  return `<svg viewBox="0 0 140 220" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="figGrad${id}" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#93c5fd"/><stop offset="45%" stop-color="#818cf8"/><stop offset="100%" stop-color="#c084fc"/></linearGradient></defs>
+<g class="fig-body">
+<rect class="fig-leg-l" x="46" y="150" width="20" height="64" rx="10" fill="url(#figGrad${id})"/>
+<rect class="fig-leg-r" x="74" y="150" width="20" height="64" rx="10" fill="url(#figGrad${id})"/>
+<path class="fig-torso" d="M36,66 Q70,54 104,66 L96,150 Q70,158 44,150 Z" fill="url(#figGrad${id})"/>
+<rect class="fig-arm-l" x="18" y="66" width="18" height="80" rx="9" fill="url(#figGrad${id})"/>
+<rect class="fig-arm-r" x="104" y="66" width="18" height="80" rx="9" fill="url(#figGrad${id})"/>
+<rect x="62" y="48" width="16" height="14" fill="url(#figGrad${id})"/>
+<circle cx="70" cy="30" r="20" fill="url(#figGrad${id})"/>
+<path d="M56,66 L70,84 L84,66" stroke="rgba(15,23,42,.35)" stroke-width="3" fill="none" stroke-linecap="round"/>
+</g></svg>`;
+}
+document.querySelectorAll('.fig-wrap').forEach((w,i)=>{w.innerHTML=figureSVG(i)});
+
+// Pillars
+(()=>{const g=document.getElementById('pg');pillars.forEach(p=>{const d=document.createElement('div');d.className='pc';d.innerHTML=`<div class="pi">${p.icon}</div><div class="pt2 fd">${p.title}</div><div class="pd">${p.desc}</div>`;g.appendChild(d)})})();
+
+// Timeline
+(()=>{const tl=document.getElementById('tl');exps.forEach(e=>{const i=document.createElement('div');i.className='ti fu rel';i.innerHTML=`
+  <div class="tm"><div class="td">${e.period}</div><span style="font-size:11px;padding:3px 9px;border-radius:100px;color:${e.color};background:${e.color}18;border:1px solid ${e.color}30;font-family:'JetBrains Mono',monospace">${e.type}</span></div>
+  <div class="tdot" style="background:${e.color};box-shadow:0 0 10px ${e.color}60"></div>
+  <div class="ec">
+    <div class="emm"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--t3)">${e.period}</span><span style="font-size:11px;padding:3px 9px;border-radius:100px;color:${e.color};background:${e.color}18;border:1px solid ${e.color}30;font-family:'JetBrains Mono',monospace">${e.type}</span></div>
+    <div class="er fd">${e.role}</div>
+    <div class="eco fm" style="color:${e.color}">${e.company}</div>
+    <div class="etgs">${e.tags.map(t=>`<span class="etg" style="color:${e.color};background:${e.color}12;border:1px solid ${e.color}25">${t}</span>`).join('')}</div>
+    <ul class="eps">${e.pts.map(p=>`<li class="ep"><div class="edot" style="background:${e.color}"></div><span>${p}</span></li>`).join('')}</ul>
+  </div>`;tl.appendChild(i)})})();
+
+// Traits
+(()=>{const r=document.getElementById('tkr');traits.forEach(t=>{const d=document.createElement('div');d.className='tkc';d.innerHTML=`<span class="tki">${t.icon}</span><span class="tkn">${t.label}</span>`;r.appendChild(d)})})();
+
+// Skill groups (numbers start at 0, count up on scroll into view)
+(()=>{const sg=document.getElementById('skg');sgs.forEach(g=>{const d=document.createElement('div');d.className='skc';d.innerHTML=`<div class="skch"><div class="skcd" style="background:${g.color}"></div><div class="skcn fd">${g.cat}</div></div>${g.skills.map(s=>`<div class="ski"><div class="skr"><span class="skn">${s.n}</span><span class="skp fm" style="color:${g.color}">0%</span></div><div class="skt"><div class="skf" data-level="${s.l}" style="background:linear-gradient(90deg,${g.color}88,${g.color})"></div></div></div>`).join('')}`;sg.appendChild(d)})})();
+
+// Contact cards
+(()=>{const cg=document.getElementById('cg');cls.forEach(c=>{const a=document.createElement('a');a.className='cca';a.href=c.href;if(c.href.startsWith('http')){a.target='_blank';a.rel='noopener'}a.innerHTML=`<div class="cci" style="color:${c.color};background:${c.color}18">${c.icon}</div><div><div class="ccl fm">${c.lbl}</div><div class="ccv">${c.val}</div></div>`;cg.appendChild(a)})})();
+
+// Modals
+function ores(){document.getElementById('rm').classList.add('open');document.body.style.overflow='hidden';document.getElementById('rm').scrollTop=0}
+function oart(){document.getElementById('am').classList.add('open');document.body.style.overflow='hidden';document.getElementById('am').scrollTop=0}
+function cm(id){document.getElementById(id).classList.remove('open');document.body.style.overflow=''}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){cm('rm');cm('am')}});
+
+// Navbar scroll + scroll progress bar
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('sc',window.scrollY>40);
+  const h=document.documentElement;
+  const pct=h.scrollHeight>h.clientHeight?(h.scrollTop/(h.scrollHeight-h.clientHeight))*100:0;
+  document.getElementById('scrollbar').style.width=pct+'%';
+});
+
+// Mobile menu
+let mo=false;
+function tmenu(){mo=!mo;document.getElementById('mm').style.display=mo?'block':'none';if(mo){document.getElementById('h1').style.transform='rotate(45deg) translate(5px,5px)';document.getElementById('h2').style.opacity='0';document.getElementById('h3').style.transform='rotate(-45deg) translate(5px,-5px)'}else rh()}
+function rh(){document.getElementById('h1').style.transform='';document.getElementById('h2').style.opacity='';document.getElementById('h3').style.transform=''}
+
+// Rotating word
+const ws=['Strategy','Innovation','Partnerships'];let wi=0;const rwe=document.getElementById('rw');rwe.style.transition='opacity .3s,transform .3s';
+setInterval(()=>{wi=(wi+1)%ws.length;rwe.style.opacity='0';rwe.style.transform='translateY(10px)';setTimeout(()=>{rwe.textContent=ws[wi];rwe.style.opacity='1';rwe.style.transform='translateY(0)'},300)},2500);
+
+// Count-up helper for skill percentages
+function countUp(el,target,dur=1000){
+  const t0=performance.now();
+  function tick(now){
+    const p=Math.min((now-t0)/dur,1);
+    const e=1-Math.pow(1-p,3);
+    el.textContent=Math.round(e*target)+'%';
+    if(p<1)requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
+// IntersectionObserver — fade-ups
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('v')})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.fu').forEach(e=>io.observe(e));
+
+// IntersectionObserver — skill bars + counting numbers, all 4 groups
+document.querySelectorAll('.ski').forEach(el=>{
+  const bar=el.querySelector('.skf');
+  const num=el.querySelector('.skp');
+  const obs=new IntersectionObserver(ents=>{
+    if(ents[0].isIntersecting){
+      bar.style.width=bar.dataset.level+'%';
+      countUp(num,parseInt(bar.dataset.level,10));
+      obs.disconnect();
+    }
+  },{threshold:.3});
+  obs.observe(el);
+});
+
+// Starfield behind hero
+(()=>{const s=document.getElementById('stars');for(let i=0;i<45;i++){const d=document.createElement('div');d.className='star';const sz=(Math.random()*2+1).toFixed(1);d.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;top:${Math.random()*100}%;animation-duration:${(2+Math.random()*3).toFixed(1)}s;animation-delay:${(Math.random()*3).toFixed(1)}s;opacity:${(Math.random()*.5+.2).toFixed(2)}`;s.appendChild(d)}})();
+
+// Ambient particles around hero figure
+(()=>{const c=document.getElementById('oc');for(let i=0;i<16;i++){const p=document.createElement('div');p.className='pt';const sz=Math.random()*3.5+1.5;const a=Math.random()*360;const d=Math.random()*55+140;const x=Math.cos(a*Math.PI/180)*d;const y=Math.sin(a*Math.PI/180)*d*.42;p.style.cssText=`width:${sz}px;height:${sz}px;left:calc(50% + ${x}px);top:calc(50% + ${y}px);opacity:${Math.random()*.5+.2};animation:float ${4+Math.random()*4}s ease-in-out infinite;animation-delay:${Math.random()*4}s`;c.appendChild(p)}})();
+
+// Figure parallax on mouse move
+(()=>{const hero=document.getElementById('hero');const oc=document.getElementById('oc');
+hero.addEventListener('mousemove',e=>{const r=hero.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5;const y=(e.clientY-r.top)/r.height-.5;oc.style.transform=`translate(${x*18}px,${y*14}px)`});
+hero.addEventListener('mouseleave',()=>{oc.style.transform='translate(0,0)'});
+})();
+
+// Smooth scroll anchors
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const t=a.getAttribute('href');if(t&&t.length>1){e.preventDefault();go(t)}})});
+</script>
+</body>
+</html>
