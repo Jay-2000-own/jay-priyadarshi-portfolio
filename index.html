@@ -205,6 +205,27 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:26px 20px;text-align:c
 .pfl{font-size:12px;color:var(--t3);margin-top:8px;line-height:1.5;font-weight:500}
 .og{display:grid;grid-template-columns:1fr;gap:14px}@media(min-width:640px){.og{grid-template-columns:1fr 1fr}}@media(min-width:1000px){.og{grid-template-columns:repeat(4,1fr)}}
 .stn{font-weight:800;font-size:30px;line-height:1;margin-bottom:10px}
+@media(max-width:767px){
+section[id]{padding-top:52px!important;padding-bottom:52px!important}
+#hero{min-height:auto}
+.hi{min-height:0;padding:84px 20px 36px;gap:16px}
+.cw{height:250px}
+.si{display:none}
+#proof{margin-top:0!important;padding-top:0!important;padding-bottom:8px!important}
+.pf .pc{padding:16px}
+.slab{margin-bottom:10px}
+.sh2{margin-bottom:14px}
+.ti{margin-bottom:14px}
+.ec{padding:18px}
+.fa,.rc{padding:20px}
+.cbt{margin-bottom:28px}
+.cbt .bp{width:100%;max-width:340px;justify-content:center}
+.pw{padding:28px 18px 60px}
+}
+.pau{gap:18px;padding:18px 22px}
+.pau>div:last-child>div:first-child{font-size:16px;margin-bottom:6px}
+.paum{line-height:1.65}
+.pauav{width:48px;height:48px;flex-shrink:0}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.fu{opacity:1;transform:none}}
 </style>
 </head>
@@ -338,10 +359,10 @@ const pillars=[
 {icon:"🪶",title:"Narrative Power",desc:"Words are my oldest tool. As a researcher and content writer, I turn complex ideas into clear, persuasive stories."}];
 const exps=[
 {role:"Business Partnerships Manager",company:"7Span",period:"Sep 2025 – Present",type:"Full-time",color:"#3b82f6",tags:["B2B Partnerships","Custom Software","Digital Transformation","SaaS"],pts:["Building long-term collaborations with startups, SMEs, and enterprises seeking dedicated tech teams","Managing full-cycle deal processes, from first conversation to signed partnership","Connecting client business goals with technology delivery across 500+ completed projects","Working closely with founders and decision-makers across India and global markets"]},
-{role:"Business Advisor",company:"Odoo",period:"Jan 2025 – Aug 2025",type:"Advisory",color:"#8b5cf6",tags:["ERP Advisory","B2B Sales","Client Consulting","Technology Adoption"],pts:["Drove client consulting and advisory engagements around ERP-led transformations","Rebuilt client communication frameworks around business outcomes, not product features","Helped mid-market businesses navigate Odoo adoption from evaluation to active use","Contributed to marketing campaigns that improved lead quality and engagement rates"]},
-{role:"Freelance Content Writer",company:"Independent",period:"Sep 2024 – Oct 2025",type:"Freelance",color:"#06b6d4",tags:["Research Writing","B2B Content","Email Copy","Blog Strategy"],pts:["Produced research-backed blogs and articles for SMB clients across categories","Developed email content sequences that improved open rates and conversion","Wrote in the founder’s voice: never generic, always specific to the reader’s context"]},
-{role:"Research Scholar (Part-Time)",company:"Ganpat University",period:"Aug 2024 – Present",type:"Academic",color:"#34d399",tags:["MBA Research","Academic Writing","Marketing Studies"],pts:["Conducted original research on influencer marketing, consumer psychology, and trust","Research projects challenged existing frameworks with primary data from 400+ respondents","Continued research part-time after graduation, driven by intellectual curiosity, not credentials","Corporate Identity Management and Its Impact on Corporate Identity Attractiveness and Turnover Intention: A Cross-Industry Study (Published Paper in GFJMR Vol 28(1), 25–36, 2024)"]},
-{role:"Lawyer",company:"District & Sessions Court, Mehsana",period:"Jul 2020 – Feb 2023",type:"Practice",color:"#f59e0b",tags:["Criminal Law","Legal Drafting","Courtroom Advocacy","Commercial Contracts"],pts:["Three years of active practice at District Court of Mehsana in criminal and civil matters","Developed foundational skills in legal research, document drafting, and strategic argumentation","Built the analytical discipline and composure under pressure that now defines my approach to deals","Navigated client representation with empathy, ethics, and a focus on long-term outcomes"]}];
+{role:"Business Advisor",company:"Odoo",period:"Jan 2025 – Aug 2025",type:"Advisory",color:"#3b82f6",tags:["ERP Advisory","B2B Sales","Client Consulting","Technology Adoption"],pts:["Drove client consulting and advisory engagements around ERP-led transformations","Rebuilt client communication frameworks around business outcomes, not product features","Helped mid-market businesses navigate Odoo adoption from evaluation to active use","Contributed to marketing campaigns that improved lead quality and engagement rates"]},
+{role:"Freelance Content Writer",company:"Independent",period:"Sep 2024 – Oct 2025",type:"Freelance",color:"#3b82f6",tags:["Research Writing","B2B Content","Email Copy","Blog Strategy"],pts:["Produced research-backed blogs and articles for SMB clients across categories","Developed email content sequences that improved open rates and conversion","Wrote in the founder’s voice: never generic, always specific to the reader’s context"]},
+{role:"Research Scholar (Part-Time)",company:"Ganpat University",period:"Aug 2024 – Present",type:"Academic",color:"#3b82f6",tags:["MBA Research","Academic Writing","Marketing Studies"],pts:["Conducted original research on influencer marketing, consumer psychology, and trust","Research projects challenged existing frameworks with primary data from 400+ respondents","Continued research part-time after graduation, driven by intellectual curiosity, not credentials","Corporate Identity Management and Its Impact on Corporate Identity Attractiveness and Turnover Intention: A Cross-Industry Study (Published Paper in GFJMR Vol 28(1), 25–36, 2024)"]},
+{role:"Lawyer",company:"District & Sessions Court, Mehsana",period:"Jul 2020 – Feb 2023",type:"Practice",color:"#3b82f6",tags:["Criminal Law","Legal Drafting","Courtroom Advocacy","Commercial Contracts"],pts:["Three years of active practice at District Court of Mehsana in criminal and civil matters","Developed foundational skills in legal research, document drafting, and strategic argumentation","Built the analytical discipline and composure under pressure that now defines my approach to deals","Navigated client representation with empathy, ethics, and a focus on long-term outcomes"]}];
 const sgs=[
 {cat:"Partnerships & Business Dev",color:"#3b82f6",skills:[{n:"B2B Partnership Development",l:92},{n:"Client Relationship Management",l:93},{n:"Deal Structuring",l:92}]},
 {cat:"Digital & ERP",color:"#8b5cf6",skills:[{n:"ERP Transformation (Odoo)",l:90},{n:"Digital Strategy",l:82},{n:"SaaS Product Advisory",l:90}]},
